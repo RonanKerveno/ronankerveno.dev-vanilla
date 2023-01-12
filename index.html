@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ronan Kerveno, développeur web">
+	<meta name="keywords" content="développeur web, CV, site personnel">
+	<meta name="author" content="Ronan Kerveno">
+	<title>Ronan Kerveno - Développeur Web</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/rk.png">
+	<script src="js/app.js" defer></script>
+</head>
+
+<body class="body">
+
+	<header class="header" id="header">
+		<a class="logo" href="#accueil">
+			<img class="logo__image" src="img/LogoRK.png" alt="Logo RK">
+		</a>
+		<nav class="nav">
+			<a href="#" class="nav-icon" id="burger-icon" >
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</a>
+			<ul class="nav__list" id="nav-menu">
+				<li class="nav__item"><a class="nav__link" href="#accueil">Accueil</a></li>
+				<li class="nav__item"><a class="nav__link" href="#dev">Web dev</a></li>
+				<li class="nav__item"><a class="nav__link" href="#about-me">About me</a></li>
+				<li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+
+		<div class="home" id="accueil">
+			<h1 class="home__title"><img class="home__title-image" src="img/image_accueil_nom.jpg" alt="Ronan Kerveno"></h1>
+			<!-- Images d'accueil plus ou moins larges selon les résolutions -->
+			<picture class="home__picture">
+				<source media="(max-width: 600px)" srcset="img/image_accueil_small.jpg">
+				<source media="(min-width: 601px) and (max-width: 767px)" srcset="img/image_accueil_medium.jpg">
+				<source media="(min-width: 768px) and (max-width: 1000px)" srcset="img/image_accueil_large.jpg">
+				<source media="(min-width: 1530px) and (max-width: 1799px)" srcset="img/image_accueil_larger.jpg">
+				<source media="(min-width: 1800px)" srcset="img/image_accueil_extra_large.jpg">
+				<img class="home__image" src="img/image_accueil.jpg" alt="Web devices">
+			</picture>
+		</div>
+
+		<section class="section">
+
+
+			<div class="section__dots">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="section__title-container" id="dev">
+				<img class="section__title-image" src="img/travaux.png" alt="En travaux">
+				<h2 class="section__title">Web dev to be</h2>
+			</div>
+			<div class="section__dots">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="section__flex-container">
+
+				<section class="section-block webdev">
+					<img class="webdev__title-image" src="img/logo-blanc-ock.png" alt="Logo Oclock">
+					<h3 class="webdev__title">Formation Fullstack JavaScript</h3>
+					<p class="webdev__subtitle">En cours depuis le 05/12/2022</p>
+					<ul class="learning-list">
+						<li class="learning-list__item">
+							<div class="learning-list__text">
+								Intégration web HTML/CSS
+							</div>
+							<img class="learning-list__image learning-list__image-html" src="img/html5-css3.png" alt="HTML5 CSS3">
+						</li>
+						<li class="learning-list__item">
+							<div class="learning-list__text">
+								Développement front-end JavaScript
+							</div>
+							<img class="learning-list__image learning-list__image-JS" src="img/js.png" alt="Javascript">
+						</li>
+						<li class="learning-list__item">
+							<div class="learning-list__text">
+								Développement back-end Node.js
+							</div>
+							<img class="learning-list__image learning-list__image-JSnode" src="img/node-js-240.png" alt="Node.JS">
+						</li>
+					</ul>
+					<p class="webdev__text">Titre Professionnel :</p>
+					<p class="webdev__text-degree">Développeur web et web mobile</p>
+					<a class="webdev__link link" href="https://oclock.io/formations/developpeur-web-fullstack-javascript">En savoir plus sur la formation</a>
+				</section>
+
+				<div class="section__dots">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<section class="section-block portfolio">
+					<h3 class="portfolio__title container-title">Portfolio</h3>
+					<p class="portfolio__subtitle subtitle">
+						Réalisations de sites avec Wordpress
+					</p>
+					<div class="portfolio__image-container">
+						<img class="portfolio__image" src="img/site_dsr.jpg" alt="Site dstromain.fr">
+						<a class="portfolio__link link" href="https://dstromain.fr/">Voir dstromain.fr</a>
+					</div>
+					<div class="portfolio__image-container">
+						<img class="portfolio__image" src="img/site_pitchouns.jpg" alt="Site crechelespitchouns.fr">
+						<a class="portfolio__link link" href="https://crechelespitchouns.fr/">Voir crechelespitchouns.fr</a>
+					</div>
+				</section>
+
+			</div>
+
+		</section>
+
+		<section class="section">
+
+			<div class="section__dots">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="section__title-container" id="about-me">
+				<img class="section__title-image" src="img/ronan.png" alt="Ronan">
+				<h2 class="section__title">About me</h2>
+			</div>
+			<div class="section__dots">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="section__flex-container">
+
+				<section class="section-block aboutme">
+
+					<h3 class="aboutme__title container-title">Vers le dev</h3>
+					<section class="job">
+						<h4 class="job__title subtitle">Technicien informatique en reconversion</h4>
+						<div class="aboutme__pictures">
+							<img class="aboutme__image" src="img/work.png" alt="Parcours professionnel">
+							<img class="aboutme__image" src="img/blue-right-arrow.png" alt="flèche droite">
+							<img class="aboutme__image" src="img/web-dev.png" alt="Développement web">
+						</div>
+						<p class="aboutme__text container-text"><span class="important-content">Technicien support</span> de 2010 à 2022 dans une ESN, j'ai pu au cours de mes divers missions
+							dévolopper différentes solutions de scripting qui m'ont donné le goût du code.
+						</p>
+						<img class="job__logo" src="img/akkodis-logo.png" alt="ESN AKKODIS">
+						<ul class="job__list list">
+							<li class="job__list-item list-item">
+								<strong class="important-content">VBA :</strong> optimisation de code, développement de macros répondant à divers besoins d’automatisation des clients.
+							</li>
+							<li class="job__list-item list-item">
+								<strong class="important-content">AutoHotkey :</strong> élaboration d'applications permettant l'automatisation des tâches de support (saisie automatique, recherche dans des bases données).
+								avec rédaction des manuels d'utilisation et d'exploitation.
+							</li>
+							<li class="job__list-item list-item">
+								<strong class="important-content">HTML/CSS :</strong> parallèlement à mes missions, interêt personnel pour les sites web et autoformation sur les techniques de responsive design.
+							</li>
+						</ul>
+					</section>
+
+					<div class="degrees">
+						<img class="degrees__picture subpicture" src="img/formation.png" alt="Formation">
+						<h4 class="degrees__title subtitle">Diplômes et certifications</h4>
+						<table class="degrees__table">
+							<tr class="degrees__table-row">
+								<td class="degrees__table-cell-1">
+									2013 :
+								</td>
+								<td class="degrees__table-cell-2">
+									ITIL fundation V3 (certification)
+								</td>
+							</tr>
+							<tr class="degrees__table-row">
+								<td class="degrees__table-cell-1">
+									2009 :
+								</td>
+								<td class="degrees__table-cell-2">
+									Technicien d'Assistance en Informatique (TAI), AFPA
+								</td>
+							</tr>
+							<tr class="degrees__table-row">
+								<td class="degrees__table-cell-1">
+									2007 :
+								</td>
+								<td class="degrees__table-cell-2">
+									Master 1 de Psychologie du Travail
+								</td>
+							</tr>
+							<tr class="degrees__table-row">
+								<td class="degrees__table-cell-1">
+									2005 :
+								</td>
+								<td class="degrees__table-cell-2">
+									Licence de Sciences de l'Education
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<a class="aboutme__cv" href="/doc/Ronan_Kerveno_CV.pdf">
+						<p class="aboutme__cv-link link">CV en version PDF</p>
+					</a>
+
+				</section>
+
+				<div class="section__dots">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<section class="section-block other">
+
+					<h3 class="other__title container-title">Quoi d'autre ?</h3>
+					<article class="linux">
+						<img class="linux__picture subpicture" src="img/linux-tux.png" alt="Logo Linux">
+						<h4 class="linux__title subtitle">Linux addict</h4>
+						<ul class="linux__list list">
+							<li class="linux__list-item list-item">
+								Passionné par les distributions Linux pour desktop, première installation d'Ubuntu en 2008.
+							</li>
+							<li class="linux__list-item list-item">
+								Plusieurs distributions testées depuis, Mandriva, OpenSuse, Debian, Arch Linux, Linux Mint avant de revenir sur Ubuntu.
+							</li>
+							<li class="linux__list-item list-item">
+								Promotion et installation du système auprès du grand public.
+							</li>
+						</ul>
+						<a class="linux__capture-link" href="img/ubuntu-desktop.jpg"><img class="linux__capture" src="img/ubuntu-desktop.jpg" alt="Ubuntu 22.04"></a>
+					</article>
+					<article class="footbike">
+						<img class="footbike__picture subpicture" src="img/footbike.png" alt="Logo Footbike">
+						<h4 class="footbike__title subtitle">Footbike rider</h4>
+						<p class="footbike__text container-text">Pratique un sport un peu bizarre mélant running et cyclisme : le footbike.</p>
+						<p class="footbike__text container-text">En gros une trottinette avec des roues et pneus de vélo, me permettant des sorties de 25 à 50km.</p>
+						<a class="footbike__capture-link" href="img/footbike-capture.jpg"><img class="footbike_capture" src="img/footbike-capture.jpg" alt="Mon footbike"></a>
+					</article>
+				</section>
+			</div>
+		</section>
+
+		<section class="section">
+
+			<div class="section__dots">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="section__title-container" id="contact">
+				<img class="section__title-image" src="img/contact-icon.png" alt="Contact">
+				<h2 class="section__title">Me contacter</h2>
+			</div>
+
+			<div class="contact">
+				<div class="contact-container">
+					<img class="contact__pic" src="img/mail.png" alt="Contact">
+					<div class="contact__link" id="myEmail"></div>
+				</div>
+				<div class="contact-container">
+					<img class="contact__pic" src="img/linkedin.png" alt="Contact">
+					<div class="contact__link">
+						<a href="https://www.linkedin.com/in/ronankerveno">Mon profil LinkedIn</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<img class="footer__logo" src="img/LogoRK.png" alt="Logo RK">
+		<div class="footer__copyright">&#xa9; <span class="footer__year" id="footer-year"></span> Ronan Kerveno</div>
+	</footer>
+
+</body>
+
+</html>
