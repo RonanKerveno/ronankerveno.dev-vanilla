@@ -8,7 +8,7 @@ const express = require('express');
 const router = require('./app/router');
 
 // Config port
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // Config express
 const app = express();
@@ -28,6 +28,10 @@ const ssl = {
 app.use(router);
 
 // Lancement du serveur
-https.createServer(ssl, app).listen(PORT, () => {
-    console.log(`Listening on https://localhost:${PORT}`);
-  });
+// https.createServer(ssl, app).listen(PORT, () => {
+//     console.log(`Listening on https://localhost:${PORT}`);
+//   });
+
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
+});
