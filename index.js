@@ -28,10 +28,12 @@ const ssl = {
 app.use(router);
 
 // Lancement du serveur
-// https.createServer(ssl, app).listen(PORT, () => {
-//     console.log(`Listening on https://localhost:${PORT}`);
-//   });
+// HTTPS
+https.createServer(ssl, app).listen(port, () => {
+    console.log(`Listening on https://localhost:${port}`);
+  });
 
-app.listen(port, () => {
-  console.log(`Listening on http://localhost:${port}`);
-});
+// HTTP
+// app.listen(port, () => {
+//   console.log(`Listening on http://localhost:${port}`);
+// });
