@@ -1,7 +1,5 @@
 // Import modules
 require('dotenv').config();
-const https = require('https');
-const fs = require('fs');
 const express = require('express');
 
 // Import router
@@ -18,22 +16,10 @@ app.set('views', "./app/views");
 // Config fichiers statiques
 app.use(express.static('public'));
 
-// Config SSL
-const ssl = {
-    key: fs.readFileSync(process.env.SSL_KEY_PATH),
-    cert: fs.readFileSync(process.env.SSL_CERT_PATH)
-  };
-
 // Routage
 app.use(router);
 
 // Lancement du serveur
-// HTTPS
-https.createServer(ssl, app).listen(port, () => {
-    console.log(`Listening on https://localhost:${port}`);
-  });
-
-// HTTP
-// app.listen(port, () => {
-//   console.log(`Listening on http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
+});
